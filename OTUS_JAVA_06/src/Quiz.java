@@ -33,7 +33,7 @@ public class Quiz {
             }
 
             else {
-                System.out.println("Inorrect\n");
+                System.out.println("Incorrect\n");
             }
 
         }
