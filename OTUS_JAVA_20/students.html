@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Форма добавления информации о студенте</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Форма добавления информации о студенте</h1>
+      <form>
+        <fieldset class="input-block">
+          <div class="form-group">
+            <label for="name">Имя студента:</label>
+            <input type="text" id="name" name="name" value="Александр Пушкин">
+          </div>
+          <div class="form-group">
+            <label for="dob">Дата рождения:</label>
+            <input type="date" id="dob" name="dob" value="1995-01-01">
+          </div>
+          <div class="form-group">
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender">
+              <option value="Женский">Женский</option>
+              <option value="Мужской">Мужской</option>
+            </select>
+          </div>
+          <button type="button" onclick="addStudent()">Добавить</button>
+        </fieldset>
+      </form>
+	  <h1>Таблица студентов</h1>
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>Имя студента</th>
+            <th>Пол</th>
+            <th>Дата рождения</th>
+            <th>Возраст</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>	
+		<tr>
+            <td colspan="4">&nbsp;</td>
+            
+          </tr>
+          <tr>
+            <td colspan="3">Средний возраст студентов</td>
+            <td id="average-age"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
